@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;500&display=swap');
+
+
+
+ul {
+    list-style-type: none;
+    text-align: right;
+    margin: 0;
+    padding: 0;
+  }
+
+li{
+    float: right;
+    text-align: right;
+    padding: 0px;
+  }
+
+.logo {
+   /* display: inline-block;*/
+    text-align: center;
+    /*float: left;*/
+    height: 120px;
+    width: auto; 
+   /* border-radius: 50%; */
+  }
+
+  .header-item {
+    display: inline-block;
+    align-content: center;
+    text-align: middle;
+    justify-content: center;
+    vertical-align: middle; /* add this */
+ }
+
+ h3{
+    text-align: center;
+    color: antiquewhite;
+    font-family: 'Rubik', sans-serif;
+ }
+ 
+p{
+    color: aliceblue;
+    text-align: justify;
+}
+
+ .background-tiles{
+    background-color: rgb(44, 91, 136);
+ }
+
+ h4{
+    text-align: center;
+    color: antiquewhite;
+    font-family: 'Rubik', sans-serif;
+    
+ }
+
+ h5{
+    text-align: center;
+    color: antiquewhite;
+    font-family: 'Rubik', sans-serif;
+ }
+
+ .background-header{
+    background-color: antiquewhite;
+ }
+
+ body{
+    background-color: rgb(44, 91, 136);
+    font-family: 'Rubik', sans-serif;
+ }
+ .display-6{
+    font-weight: bold;
+ }
+
+.icons{
+    width: 100px;
+    height: 100px;
+    display: block;
+    
+}
+.icons-hearth{
+    width: 100px;
+    height: 80px;
+    display: block;
+    
+}
+
+.events-carousels{
+   width: 420x;
+   height: 360px;
+   display: block;
+   margin: auto;
+}
+  
+.carousel-img{
+   max-width: 420x;
+   max-height: 360px;
+}
+
+.card-img{
+   filter: blur(2px);
+   -webkit-filter: blur(2px);
+
+}
+.card{
+   max-width: 420px;
+   max-height: 360px;
+   display: block;
+   margin:auto;
+} 
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+   background-color: transparent;
+   max-width: 420px;
+   max-height: 360px;
+   border: 1px solid #f1f1f1;
+   perspective: 1000px; /* Remove this if you don't want the 3D effect */
+ }
+ 
+ /* This container is needed to position the front and back side */
+ .flip-card-inner {
+   position: relative;
+   width: 100%;
+   height: 100%;
+   text-align: center;
+   transition: transform 0.8s;
+   transform-style: preserve-3d;
+ }
+ 
+ /* Do an horizontal flip when you move the mouse over the flip box container */
+ .flip-card:hover .flip-card-inner {
+   transform: rotateY(180deg);
+ }
+ 
+ /* Position the front and back side */
+ .flip-card-front, .flip-card-back {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   -webkit-backface-visibility: hidden; /* Safari */
+   backface-visibility: hidden;
+ }
+ 
+ /* Style the front side (fallback if image is missing) */
+ .flip-card-front {
+   text-align: center;
+   color: black;
+ }
+ 
+ /* Style the back side */
+ .flip-card-back {
+   background-color: rgb(44, 91, 136);
+   color: white;
+   transform: rotateY(180deg);
+ }
+
+ footer {
+   text-align: center;
+   padding: 3px;
+ }
+
+footer{
+   position: absolute;
+   text-align: center;
+   bottom:45px;
+   height: 30px;
+}
