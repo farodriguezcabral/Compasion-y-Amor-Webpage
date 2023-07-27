@@ -58,7 +58,7 @@ p{
 
  h5{
     text-align: center;
-    color: antiquewhite;
+    color: #5f6c7b;
     font-family: 'Rubik', sans-serif;
  }
 
@@ -165,16 +165,26 @@ p{
    bottom: 0;
    text-align: center;
    width: 100%;
-   height: 60px; /* Set the desired height for your footer */
-    /* Set the background color for your footer */
+   height: 60px; 
  }
  .social-media {
-   display:inline-block;
+   display: inline-block;
    width:36px;
    height:36px;
    margin-left: 20px;
  }
 
+ .text-area{
+   height:200px;
+   width:400px;
+ }
+
+ .contact-form {
+   display: flex;
+   justify-content: center; /* Center horizontally */
+   align-items: center; /* Center vertically */
+   padding-top: 60px ;
+ }
 /*footer{
    position: absolute;
    text-align: center;
