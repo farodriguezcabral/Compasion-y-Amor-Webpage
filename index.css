@@ -188,10 +188,16 @@ p{
    justify-content: center; /* Center horizontally */
    align-items: center; /* Center vertically */
    padding-top: 60px ;
-   opacity: 10% ;
  }
+
+.about-picture{
+   max-width: 200px;
+   max-height: 200px;
+}
+
+
 /*
-Text transition test
+Transitions code
 */
 
 .header-text{
@@ -200,18 +206,20 @@ Text transition test
 
 .left-to-right{
    
-   animation: left-to-right 3s 1, disolve-in 3s 1;
+   animation: left-to-right 3s 1;
 }
 
 .left-to-right-delay{
-   animation: left-to-right-delay 3s 1 3s, disolve-in 3s 1;
-   animation-delay: 3s;
+   opacity: 0;
+   animation: disolve-in 6s 1, left-to-right-delay 3s 1 1s;
+   /*animation-delay: 3s;*/
 }
+
 
 
 @keyframes move-up-to-down{
    0%{
-      transform: translateY(-30%);
+      transform: translateY(-45%);
       opacity: 0;
    }
    100%{
@@ -242,7 +250,7 @@ Text transition test
 @keyframes left-to-right-delay {
    0%{
    
-      transform: translateX(-50%);
+      transform: translateX(-100%);
    }
    100%{
       transform: translateX(0);
