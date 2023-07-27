@@ -60,6 +60,7 @@ p{
     text-align: center;
     color: #5f6c7b;
     font-family: 'Rubik', sans-serif;
+    animation: disolve-in 5s 1;
  }
 
  .background-header{
@@ -92,6 +93,7 @@ p{
    height: 360px;
    display: block;
    margin: auto;
+
 }
   
 .carousel-img{
@@ -121,6 +123,7 @@ p{
    max-height: 360px;
    border: 1px solid #f1f1f1;
    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+   animation: disolve-in 3s 1;
  }
  
  /* This container is needed to position the front and back side */
@@ -177,6 +180,7 @@ p{
  .text-area{
    height:200px;
    width:400px;
+   
  }
 
  .contact-form {
@@ -184,11 +188,63 @@ p{
    justify-content: center; /* Center horizontally */
    align-items: center; /* Center vertically */
    padding-top: 60px ;
+   opacity: 10% ;
  }
-/*footer{
-   position: absolute;
-   text-align: center;
-   bottom:45px;
-   height: 30px;
-}
+/*
+Text transition test
 */
+
+.header-text{
+  animation: move-up-to-down 3s 1;
+}
+
+.left-to-right{
+   
+   animation: left-to-right 3s 1, disolve-in 3s 1;
+}
+
+.left-to-right-delay{
+   animation: left-to-right-delay 3s 1 3s, disolve-in 3s 1;
+   animation-delay: 3s;
+}
+
+
+@keyframes move-up-to-down{
+   0%{
+      transform: translateY(-30%);
+      opacity: 0;
+   }
+   100%{
+      transform: translateY(0);
+      opacity: 100;
+   }
+}
+
+@keyframes disolve-in {
+   0%{
+      opacity: 0;
+   }
+   100%{
+      opacity: 100;
+   }
+}
+
+@keyframes left-to-right {
+   0%{
+   
+      transform: translateX(-100%);
+   }
+   100%{
+      transform: translateX(0);
+   }
+}
+
+@keyframes left-to-right-delay {
+   0%{
+   
+      transform: translateX(-50%);
+   }
+   100%{
+      transform: translateX(0);
+   }
+}
