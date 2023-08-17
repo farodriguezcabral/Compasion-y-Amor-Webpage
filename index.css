@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;500&display=swap');
 
 
-
 ul {
     list-style-type: none;
     text-align: right;
@@ -195,6 +194,16 @@ p{
    max-height: 200px;
 }
 
+.about {
+   margin: 5px;
+   
+ }
+
+ .flex-item {
+   flex-basis: 20%;
+   text-align: right;
+   letter-spacing: 1px;
+}
 
 /*
 Transitions code
