@@ -186,7 +186,7 @@ p{
    display: flex;
    justify-content: center; /* Center horizontally */
    align-items: center; /* Center vertically */
-   padding-top: 60px ;
+   padding-top: 30px ;
  }
 
 .about-picture{
